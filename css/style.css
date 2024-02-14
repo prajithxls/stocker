@@ -1,0 +1,125 @@
+#body{
+    background-color: black;
+}
+
+#footer{
+    margin: 3px;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+}
+#head{
+    color:rgb(236, 234, 234);
+}
+.dotsparent{
+    list-style: none;
+}
+
+.dots{
+    position: absolute;
+    right:3%;
+    color:rgb(0, 149, 255);
+    top: 5%;
+    background-color: rgb(74, 71, 71);
+    padding:.8%;
+    border-radius: 200%;
+}
+#inputdata{
+    width: 98%; 
+    background-color:rgb(40, 38, 38);
+    border-radius:5px;
+    color:white;
+    border: 2px solid black;
+}
+#items{
+    list-style: none;
+}
+#symbol{
+    color:rgb(0, 149, 255);
+    margin-left: 1.5% ;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-size:x-large;
+    text-decoration: none;
+    /* color:rgb(23, 161, 247); */
+}
+.fa fa-list-ul{
+    size:90%;
+}
+#datemonth{
+    color:grey;
+}
+.drop_down{
+    background-color:#3a3737; 
+    border-radius: 5px;
+    width:200px;
+    padding: 5px;
+    padding-right: 36px;
+    opacity: 99.6%;
+    position: absolute;
+    left:5%;
+    display: none;
+}
+
+#symbol{
+    cursor: pointer;
+}
+.drop_list{
+    list-style: none;
+    text-decoration:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stocks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stock_list{
+
+    display: flex;
+    width: 89%;
+    padding: 30px;
+    border-radius: 42px;
+    justify-content:space-between;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+}
+.comp{
+    color:#a7a7a7;
+}
+.price{
+    justify-self: center;
+    align-self:center;
+    color:white;
+}
+.diff{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: rgb(33, 232, 46);
+    border-radius: 6px;
+    text-align: right;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media only screen and (max-width:600px) {
+    .stock_list{
+        margin-top: 10px;
+        padding: 8px;
+    }
+    .stocks{
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
