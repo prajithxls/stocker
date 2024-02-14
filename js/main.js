@@ -2,16 +2,22 @@ const api_key="6fb49c1151msh4b776f1ab7020b1p1912c5jsn99503b8a9e46"
 const price_node1=document.querySelector('.price1');
 const price_node2=document.querySelector(".price2");
 const price_node3=document.querySelector(".price3");
+const price_node4=document.querySelector(".price4");
+
 const name_node1=document.querySelector('.name1');
 const name_node2=document.querySelector(".name2");
 const name_node3=document.querySelector(".name3");
+const name_node4=document.querySelector(".name4");
+
 const symb_node1=document.querySelector('.symb1');
 const symb_node2=document.querySelector(".symb2");
 const symb_node3=document.querySelector(".symb3");
+const symb_node4=document.querySelector(".symb4");
 
 const diff_node1=document.querySelector("#diff1");
 const diff_node2=document.querySelector("#diff2");
 const diff_node3=document.querySelector("#diff3");
+const diff_node4=document.querySelector("#diff4");
 
 const diff_node=document.querySelectorAll('.diff')
 
@@ -28,7 +34,7 @@ const diff_node=document.querySelectorAll('.diff')
 
 
 // const url = `https://yahoo-finance127.p.rapidapi.com/search/${company_name}/price/eth-usd`;
-const url = 'https://yahoo-finance127.p.rapidapi.com/multi-quote/sbux,aapl,msft'
+const url = 'https://yahoo-finance127.p.rapidapi.com/multi-quote/sbux,aapl,msft,ba'
 const options = {
 	method: 'GET',
 	headers: {
@@ -53,13 +59,19 @@ function update_price(result){
     price_node1.innerHTML=`$${result[0].ask['fmt']}`;
     price_node2.innerHTML=`$${result[1].ask['fmt']}`;
     price_node3.innerHTML=`$${result[2].ask['fmt']}`;
+    price_node4.innerHTML=`$${result[3].ask['fmt']}`;
+
     name_node1.innerHTML=result[0].shortName;
     name_node2.innerHTML=result[1].shortName;
     name_node3.innerHTML=result[2].shortName;
+    name_node4.innerHTML=result[3].shortName;
+    
     symb_node1.innerHTML=result[0].symbol;
     symb_node2.innerHTML=result[1].symbol;
     symb_node3.innerHTML=result[2].symbol;
-    for(i=0;i<3;i++){
+    symb_node4.innerHTML=result[3].symbol;
+
+    for(i=0;i<4;i++){
         if(result[i].regularMarketChange['fmt']<0){
             diff_node[i].style.background='red'
             diff_node[i].innerHTML=result[i].regularMarketChange['fmt']
