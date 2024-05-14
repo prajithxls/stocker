@@ -34,7 +34,7 @@ const diff_node=document.querySelectorAll('.diff')
 
 
 // const url = `https://yahoo-finance127.p.rapidapi.com/search/${company_name}/price/eth-usd`;
-const url = 'https://yahoo-finance127.p.rapidapi.com/multi-quote/sbux,aapl,msft,ba'
+const url = 'https://yahoo-finance127.p.rapidapi.com/multi-quote/nq=f,meta,goog,reliance.ns'
 const options = {
 	method: 'GET',
 	headers: {
@@ -59,7 +59,7 @@ function update_price(result){
     price_node1.innerHTML=`$${result[0].ask['fmt']}`;
     price_node2.innerHTML=`$${result[1].ask['fmt']}`;
     price_node3.innerHTML=`$${result[2].ask['fmt']}`;
-    price_node4.innerHTML=`$${result[3].ask['fmt']}`;
+    price_node4.innerHTML=`₹${result[3].ask['fmt']}`;
 
     name_node1.innerHTML=result[0].shortName;
     name_node2.innerHTML=result[1].shortName;
