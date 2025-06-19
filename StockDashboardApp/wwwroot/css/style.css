@@ -1,0 +1,77 @@
+#body {
+    background-color: black;
+}
+
+#footer {
+    margin: 3px;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+}
+
+#head {
+    color: rgb(236, 234, 234);
+}
+
+#datemonth {
+    color: grey;
+}
+
+.drop_down {
+    background-color: #3a3737;
+    border-radius: 5px;
+    width: 200px;
+    padding: 5px;
+    position: absolute;
+    left: 5%;
+    display: none;
+}
+
+.stocks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock_list {
+    display: flex;
+    width: 89%;
+    padding: 30px;
+    border-radius: 42px;
+    justify-content: space-between;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+}
+
+.price {
+    justify-self: center;
+    align-self: center;
+    color: white;
+}
+
+.diff {
+    background-color: rgb(33, 232, 46);
+    border-radius: 6px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .stock_list {
+        padding: 8px;
+    }
+    .stocks {
+        gap: 20px;
+    }
+    #body {
+        font-size: 50%;
+    }
+}

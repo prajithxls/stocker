@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "scXmJsgDLns=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\praji\\OneDrive\\Desktop\\Projects\\stocker\\StockDashboardApp\\StockDashboardApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\praji\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.6\\microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",
+    "C:\\Users\\praji\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
