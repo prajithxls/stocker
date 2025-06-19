@@ -32,7 +32,6 @@ namespace YourNamespace.Controllers
 
                 var responseBody = await response.Content.ReadAsStringAsync();
 
-                // Parse JSON and send to frontend
                 using JsonDocument doc = JsonDocument.Parse(responseBody);
                 var result = doc.RootElement;
 

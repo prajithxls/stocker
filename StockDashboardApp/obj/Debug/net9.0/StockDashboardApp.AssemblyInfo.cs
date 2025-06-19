@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StockDashboardApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbadfdc93a308b43c4e0ac729e1e499198b29f5b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+295768711eaec2781e05549fc03c7f450e316973")]
 [assembly: System.Reflection.AssemblyProductAttribute("StockDashboardApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StockDashboardApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

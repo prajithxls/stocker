@@ -1,12 +1,11 @@
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-builder.Services.AddHttpClient(); // For your API call
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
-app.UseStaticFiles();  // Enable serving wwwroot
+app.UseStaticFiles(); 
 app.UseRouting();
-app.MapControllers();  // Enables [ApiController] routing
-
+app.MapControllers(); 
 app.Run();
